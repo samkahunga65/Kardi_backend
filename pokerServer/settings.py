@@ -26,7 +26,8 @@ SECRET_KEY = '+5*-vi_)_(rfx*-*8nxf%$^ikp#b020+29xyw-n%5zmt^zb=wt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
+                 "intense-island-18688.herokuapp.com"]
 
 
 # Application definition
