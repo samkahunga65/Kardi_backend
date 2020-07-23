@@ -27,7 +27,7 @@ SECRET_KEY = '+5*-vi_)_(rfx*-*8nxf%$^ikp#b020+29xyw-n%5zmt^zb=wt'
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
-                 "intense-island-18688.herokuapp.com"]
+                 "mysterious-dawn-39618.herokuapp.com"]
 
 
 # Application definition
