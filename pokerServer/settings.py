@@ -28,7 +28,7 @@ SECRET_KEY = '+5*-vi_)_(rfx*-*8nxf%$^ikp#b020+29xyw-n%5zmt^zb=wt'
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
-                 "mysterious-dawn-39618.herokuapp.com"]
+                 "desolate-caverns-46621.herokuapp.com"]
 
 
 # Application definition
