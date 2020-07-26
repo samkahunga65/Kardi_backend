@@ -102,3 +102,18 @@ def rmChips(request, magld):
     moir = Player.objects.get(owner=myid)
     serializer = PlayerSerializer(moir)
     return Response(serializer.data)
+
+
+@api_view(['GET'])
+def findFriends(request, ids):
+    q = ids.split()
+    friendlist = []
+    for i in q:
+        print(i)
+        p = Player.objects.filter(owner=i)
+        if p.exists():
+            serializer = PlayerSerializer(p, many=True)
+            data = serializer.data
+            friendlist.append(data)
+
+    return Response(friendlist)

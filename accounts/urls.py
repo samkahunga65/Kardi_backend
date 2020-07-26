@@ -22,6 +22,7 @@ urlpattern = [
     path('addchips/<str:magld>', views.addChips, name='add chips'),
     path('rmchips/<str:magld>', views.rmChips, name='remove chips'),
     path('uap/<int:id>', views.userAndPlayer, name='user and player'),
+    path('findfriends/<str:ids>', views.findFriends, name='findFriends'),
 ]
 
 urlpatterns = urlpattern + router.urls + \
