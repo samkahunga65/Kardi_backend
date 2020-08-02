@@ -22,6 +22,7 @@ def apiOverview(request):
 
 @api_view(['GET'])
 def user(request, famid):
+    @permission_classes([IsAuthenticated])
     print(famid)
     q = famid.split()
     print(q)
@@ -45,6 +46,7 @@ def userAndPlayer(request, id):
 
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def userRemove(request, famid):
     print(famid)
     q = famid.split()
@@ -59,7 +61,9 @@ def userRemove(request, famid):
 
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def addGold(request, magld):
+
     q = magld.split()
     myid = int(q[0])
     gol = int(q[1])
@@ -71,6 +75,7 @@ def addGold(request, magld):
 
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def rmGold(request, magld):
     q = magld.split()
     myid = int(q[0])
@@ -83,6 +88,7 @@ def rmGold(request, magld):
 
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def addChips(request, magld):
     q = magld.split()
     myid = int(q[0])
@@ -95,6 +101,7 @@ def addChips(request, magld):
 
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def rmChips(request, magld):
     q = magld.split()
     myid = int(q[0])
@@ -107,6 +114,7 @@ def rmChips(request, magld):
 
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def findFriends(request, ids):
     q = ids.split()
     friendlist = []
